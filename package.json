@@ -21,8 +21,12 @@
     "generate": "stencil generate",
     "deploy": "npm publish ; vercel --prod --confirm --name stellar-demo-wallet"
   },
+  "_moduleAliases": {
+    "@prompt": "dist/collection/components/prompt",
+    "@services": "dist/collection/services"
+  },
   "devDependencies": {
-    "@capacitor/cli": "^2.2.0",
+    "@capacitor/cli": "^3.3.2",
     "@capacitor/core": "^2.2.0",
     "@stablelib/base64": "^1.0.0",
     "@stencil/core": "1.9.2",
@@ -31,16 +35,17 @@
     "@tinyanvil/argon2": "0.0.5",
     "@types/autoprefixer": "^9.7.2",
     "autoprefixer": "^9.8.4",
-    "axios": "^0.19.2",
+    "axios": "^0.24.0",
     "copy-to-clipboard": "^3.3.1",
     "husky": "^4.2.5",
     "js-combinatorics": "^0.6.1",
-    "lodash-es": "^4.17.15",
+    "lodash-es": "^4.17.21",
     "menubar": "^9.0.1",
+    "module-alias": "^2.2.2",
     "prettier": "^2.0.5",
     "pretty-quick": "^2.0.1",
     "rollup-plugin-node-polyfills": "^0.2.1",
-    "stellar-sdk": "^5.0.3",
+    "stellar-sdk": "^9.1.0",
     "toml": "^3.0.0",
     "tweetnacl": "^1.0.3"
   },
